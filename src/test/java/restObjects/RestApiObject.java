@@ -19,6 +19,7 @@ public class RestApiObject {
 				.log().all()
 				.baseUri(getBaseUri())
 				.header("Content-Type", "application/json")
+				 .header("x-api-key", "reqres-free-v1")
 				.body(payload);
 
 		switch (method.toUpperCase()) {
@@ -41,7 +42,8 @@ public class RestApiObject {
 		RequestSpecification request = given()
 				.log().all()
 				.baseUri(getBaseUri())
-				.header("Content-Type", "application/json");
+				.header("Content-Type", "application/json")
+				 .header("x-api-key", "reqres-free-v1");
 		
 				
 		
