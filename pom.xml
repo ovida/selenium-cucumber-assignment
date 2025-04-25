@@ -34,6 +34,20 @@
         <artifactId>selenium-java</artifactId>
         <version>4.20.0</version>
     </dependency>
+    
+    <!-- REST Assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.4.0</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+	<groupId>io.cucumber</groupId>
+	<artifactId>cucumber-picocontainer</artifactId>
+	<version>7.15.0</version> <!-- Match your other Cucumber versions -->
+</dependency>
 
     <!-- Cucumber -->
     <dependency>
@@ -61,7 +75,13 @@
         <scope>test</scope>
     </dependency>
     
-    
+    <!-- JSON support for response validation -->
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20231013</version>
+</dependency>
+
     <!--WebDriver Manager-->
    <dependency>
     <groupId>io.github.bonigarcia</groupId>
